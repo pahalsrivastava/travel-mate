@@ -1,5 +1,3 @@
-
-
 import Plan from "@/components/features/plan";
 import { getPlan } from "@/server/plans";
 import { notFound } from "next/navigation";
