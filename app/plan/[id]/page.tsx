@@ -1,4 +1,4 @@
-// app/plan/[id]/page.tsx
+
 
 import Plan from "@/components/features/plan";
 import { getPlan } from "@/server/plans";
@@ -13,7 +13,9 @@ interface PlanPageProps {
 
 export async function generateMetadata({
   params,
-}: PlanPageProps): Promise<Metadata> {
+}: {
+  params: { id: string };
+}): Promise<Metadata> {
   return {
     title: "Your Trip Plan",
     description: "View your AI-generated travel itinerary",
